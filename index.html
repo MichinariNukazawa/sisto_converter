@@ -1,0 +1,79 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>sisto</title>
+	<!--
+	<link rel="shortcut icon" href="icon.ico">
+	-->
+	<script type="text/javascript" src="scripts.js"></script>
+	<LINK href="style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="tracks.js"></script>
+
+
+
+</head>
+<body>
+	<h1>sisto<font size="-1"> -Simple diacritical mark converter for Esperanto-</font></h1>
+<div class="left">
+	<noscript>
+		<p><font color="ee0000" size="+2">
+			このページの機能を使うにはJavaScriptを有効にしてください。
+		</font></p>
+	</noscript>
+	エスペラントの代用表記を、ダイアクリティカルマークを付与したUnicode文字列に変換します。<br />
+	<!--
+	詳しい使い方などは開発者の<a href=>ブログ記事</a>をご覧ください<br />
+	-->
+		<h3>設定</h3>
+		代用表記方式:
+		<select name="kind_sistemo"
+		 id="kind_sistemo" onclick="cb_kind_sistemo()">
+			<option value="caret-sistemo">^(caret)-sistemo</option>
+			<!--
+			<option value="js">動的(JavaScript使用) 未実装</option>
+			<option value="js_css">動的(JS,CSS使用) 未実装</option>
+			-->
+		</select>
+		<br />
+		<br />
+		<h3> 原文：<font size="-1">(ここに入力)</font></h3>
+		<textarea rows="2" style="width:90%" id='code'
+			onkeyup="cb_onkeyup_code()"
+			>Mi estas tre g^oja konatig^i kun vi.</textarea>
+		<br />
+		<h3>プレビュー:</h3>
+		<div id="preview" ></div>
+		<h3>HTML:</h3>
+		<textarea style="width:90%" 
+		 cols="50" rows="12" id="html_output" readonly>
+		</textarea>
+		<br />
+	</div>
+	<div class="right">
+	</div>
+	<div class="clearfix">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- sisto-responsive -->
+		<ins class="adsbygoogle"
+		style="display:block"
+		data-ad-client="ca-pub-5057531329998733"
+		data-ad-slot="4113578759"
+		data-ad-format="auto"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+
+	<div style="clear:both">
+		<hr>
+		<font size="-2">
+		問い合わせ等は <font color="#3366ff"><a href="mailto:michinari.nukazawa@gamil.com">michinari.nukazawa@gmail.com</a></font> へ。<br />
+		<br />
+		・文字列加工をすべてJavaScriptで行なっています。加工文字列はサーバに送信されません<br />
+		・本サービスを使用したことによる責任は、すべてユーザが負うこととします。<br />
+		</font>
+		</div>
+	</div>
+
+</body>
+</html>
