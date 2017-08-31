@@ -34,12 +34,11 @@
 	}
 
 	#preview{
-		/*overflow: scroll;*/
-		/*margin: 5px;*/
-		width: 95%;
+		font-size: 150%;
+		padding-left: 10px;
 		max-height: 400px;
 		border : 3px solid #ff69b4;
-		width:90%;
+		width:85%;
 	}
 
 	/* 以下2つはクラス内のをfloatを解除する"crearfix"手法 */
